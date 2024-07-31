@@ -31,11 +31,8 @@ Template for web-publish ready html doc, with webpack install needed only
         		entry: "./src/index.js",
         		plugins: [
             		new HtmlWebpackPlugin({
-            		scriptLoading: "blocking", //adds script to end of body
-        		template: "./src/index.html  //makes src>index.html the
-        						editable template, and then
-        						packs all the info into
-        						dist>index.html for production
+            		scriptLoading: "blocking",
+        		    template: "./src/index.html ",
             		}),
         		],
         		output: {
