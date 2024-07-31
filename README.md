@@ -25,31 +25,31 @@ Template for web-publish ready html doc, with webpack install needed only
     https://webpack.js.org/guides/output-management/#setting-up-htmlwebpackplugin
 
         	const HtmlWebpackPlugin = require("html-webpack-plugin");
-        	const path = require("path");
-
-        	module.exports = {
-        		entry: "./src/index.js",
-        		plugins: [
-            		new HtmlWebpackPlugin({
-            		scriptLoading: "blocking",
-        		    template: "./src/index.html ",
-            		}),
-        		],
-        		output: {
-            		filename: "main.js",
-            		path: path.resolve(__dirname, "dist"),
-            		clean: true,
-
-                    },
+            const path = require("path");
+            
+            module.exports = {
+                entry: "./src/index.js",
+                plugins: [
+                    new HtmlWebpackPlugin({
+                        scriptLoading: "blocking",
+                        template: "./src/index.html",
+                    }),
+                ],
+                output: {
+                    filename: "main.js",
+                    path: path.resolve(__dirname, "dist"),
+                    clean: true,
+                },
                 module: {
                     rules: [
-                            {
-                                test: /\.css$/i,
-                                use: ["style-loader","css-loader"],
-                                },
-                            ],
+                        {
+                            test: /\.css$/i,
+                            use: ["style-loader", "css-loader"],
                         },
-                    };
+                    ],
+                },
+            };
+
 
 11. To setup webpack to manage HTML: npm install --save-dev html-webpack-plugin
 12. In package.json add a comma at the end of "scripts: { "test":... , "build":
