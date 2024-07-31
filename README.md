@@ -43,8 +43,15 @@ Template for web-publish ready html doc, with webpack install needed only
             		path: path.resolve(__dirname, "dist"),
             		clean: true,
 
-    }, module: { rules: [ { test: /\.css$/i, use: ["style-loader",
-    "css-loader"], }, ], }, };
+                    },
+                module: {
+                    rules: [
+                            { test: /\.css$/i, use: ["style-loader",
+                                "css-loader"],
+                                },
+                            ],
+                        },
+                    };
 
 10. To setup webpack to manage HTML: npm install --save-dev html-webpack-plugin
 11. In package.json add a comma at the end of "scripts: { "test":... , "build":
