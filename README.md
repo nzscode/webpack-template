@@ -56,7 +56,7 @@ Template for web-publish ready html doc, with webpack install needed only
 12. In the src folder create a style.css file
 13. Make sure the necessary rules are in webpack.config.js for css
     1. Install the files needed to run CSS & Styles: npm install --save-dev
-       css-loader style-leader
+       css-loader style-loader
 14. Import the css file into the index.js file using : import "./style.css" at
     the top of the file
 15. To complete basic Build, npx webpack OR npm run build
