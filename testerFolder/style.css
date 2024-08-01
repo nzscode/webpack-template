@@ -1,0 +1,15 @@
+.greenFont {
+    color: green;
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+.newDiv {
+    background-color: hotpink;
+    width: 200px;
+    height: 200px;
+    border: 3px solid blue;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px salmon;
+}
