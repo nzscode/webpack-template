@@ -109,3 +109,25 @@ Template for web-publish ready html doc, with webpack install needed only
     -   Under the Source section you will see a dropdown list of branches.
     -   Select the "gh-pages" branch and select the root as your folder.
     -   Then click Save.
+
+
+
+## Adding Font-Awesome Icons to element
+- When creating the element:
+      - add the font-awesome code to the inner code of the element
+      Ex:
+  
+  ```
+  let deleteBtn = document.createElemnt("div");
+  deleteBtn.innerHTML = `<i class="fa-solid fa-trash-can"></i>`
+```
+
+- To the index.html page of the src folder add the script from the kit
+    Ex:
+
+```
+<script
+            src="https://kit.fontawesome.com/08988bcf09.js"
+            crossorigin="anonymous"
+        ></script>
+        ```
