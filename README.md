@@ -73,6 +73,8 @@ Template for web-publish ready html doc, with webpack install needed only
 
     ```
     git add dist && git commit -m "Initial dist subtree commit"```
+
+    
     ```
     git subtree push --prefix dist origin gh-pages```
 
@@ -97,6 +99,8 @@ Template for web-publish ready html doc, with webpack install needed only
 ```
             npm run gh-deploy
             npm run gh-deploy-init```
+
+
 
     4.  In your repository in GitHub. Go to Settings. Go to Pages.
         -   Under the Source section you will see a dropdown list of branches.
