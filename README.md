@@ -87,7 +87,7 @@ Template for web-publish ready html doc, with webpack install needed only
         -   Make it easier to run by creating scripts like these in your
             package.json file:
 
-            ```
+            ```js
             "scripts":
                 {
                 "gh-deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
@@ -98,7 +98,7 @@ Template for web-publish ready html doc, with webpack install needed only
             
 
         -In terminal:
-```
+```bash
             npm run gh-deploy
             npm run gh-deploy-init
 ```
@@ -117,9 +117,9 @@ Template for web-publish ready html doc, with webpack install needed only
       - add the font-awesome code to the inner code of the element
       Ex:
   
-  ```
+  ```js
   let deleteBtn = document.createElemnt("div");
-  deleteBtn.innerHTML = `<i class="fa-solid fa-trash-can"></i>`
+  deleteBtn.innerHTML = /`<i class="fa-solid fa-trash-can"></i>/`
 ```
 
 
@@ -127,6 +127,6 @@ Template for web-publish ready html doc, with webpack install needed only
     Ex:
 
 
-```
+```html
 <script src="https://kit.fontawesome.com/08988bcf09.js" crossorigin="anonymous"></script>
 ```
