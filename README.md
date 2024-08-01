@@ -25,53 +25,51 @@ Template for web-publish ready html doc, with webpack install needed only
     https://webpack.js.org/guides/output-management/#setting-up-htmlwebpackplugin
 
         	const HtmlWebpackPlugin = require("html-webpack-plugin");
-        	const path = require("path");
-
-        	module.exports = {
-        		entry: "./src/index.js",
-        		plugins: [
-            		new HtmlWebpackPlugin({
-            		scriptLoading: "blocking", //adds script to end of body
-        		template: "./src/index.html  //makes src>index.html the
-        						editable template, and then
-        						packs all the info into
-        						dist>index.html for production
-            		}),
-        		],
-        		output: {
-            		filename: "main.js",
-            		path: path.resolve(__dirname, "dist"),
-            		clean: true,
-
-                    },
+            const path = require("path");
+            
+            module.exports = {
+                entry: "./src/index.js",
+                plugins: [
+                    new HtmlWebpackPlugin({
+                        scriptLoading: "blocking",
+                        template: "./src/index.html",
+                    }),
+                ],
+                output: {
+                    filename: "main.js",
+                    path: path.resolve(__dirname, "dist"),
+                    clean: true,
+                },
                 module: {
                     rules: [
-                            { test: /\.css$/i, use: ["style-loader",
-                                "css-loader"],
-                                },
-                            ],
+                        {
+                            test: /\.css$/i,
+                            use: ["style-loader", "css-loader"],
                         },
-                    };
+                    ],
+                },
+            };
 
-10. To setup webpack to manage HTML: npm install --save-dev html-webpack-plugin
-11. In package.json add a comma at the end of "scripts: { "test":... , "build":
+
+11. To setup webpack to manage HTML: npm install --save-dev html-webpack-plugin
+12. In package.json add a comma at the end of "scripts: { "test":... , "build":
     webpack", ...}
-12. In the src folder create a style.css file
-13. Make sure the necessary rules are in webpack.config.js for css
+13. In the src folder create a style.css file
+14. Make sure the necessary rules are in webpack.config.js for css
     1. Install the files needed to run CSS & Styles: npm install --save-dev
-       css-loader style-leader
-14. Import the css file into the index.js file using : import "./style.css" at
+       css-loader style-loader
+15. Import the css file into the index.js file using : import "./style.css" at
     the top of the file
-15. To complete basic Build, npx webpack OR npm run build
-16. for adding images, fonts, json, data. See:
+16. To complete basic Build, npx webpack OR npm run build
+17. for adding images, fonts, json, data. See:
     https://webpack.js.org/guides/asset-management/
 
-17. To test if working, add boilerplate to src> index.html and a console.log
+18. To test if working, add boilerplate to src> index.html and a console.log
     statement to index.js For css testing, add a div componenet nad change its
     color to something using js then save each individual file and run npm run
     build
 
-18. To publish the files through GitHub:
+19. To publish the files through GitHub:
 
     1.  git add dist && git commit -m "Initial dist subtree commit"
     2.  git subtree push --prefix dist origin gh-pages
