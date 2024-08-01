@@ -127,3 +127,19 @@ Template for web-publish ready html doc, with webpack install needed only
         ```html
         <script src="https://kit.fontawesome.com/08988bcf09.js" crossorigin="anonymous"></script>
         ```
+
+
+## If at any point you have issues where when
+
+    ```bash
+    npx webpack
+    ```
+
+you get an error child something, try this:
+
+```bash
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo n latest
+```
