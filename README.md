@@ -71,8 +71,10 @@ Template for web-publish ready html doc, with webpack install needed only
 
 19. To publish the files through GitHub:
 
-    1.  git add dist && git commit -m "Initial dist subtree commit"
-    2.  git subtree push --prefix dist origin gh-pages
+    ```
+    git add dist && git commit -m "Initial dist subtree commit"```
+    ```
+    git subtree push --prefix dist origin gh-pages```
 
     3.  If you already have a "gh-pages" branch, use the 1st command below.
 
@@ -81,19 +83,20 @@ Template for web-publish ready html doc, with webpack install needed only
         -   Make it easier to run by creating scripts like these in your
             package.json file:
 
-```
+            ```
             "scripts":
                 {
                 "gh-deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
                 "gh-deploy-init": "git push origin && git subtree push --prefix dist origin gh-pages"
-                }```
+                }
+            ```
    
             
 
         -In terminal:
-
+```
             npm run gh-deploy
-            npm run gh-deploy-init
+            npm run gh-deploy-init```
 
     4.  In your repository in GitHub. Go to Settings. Go to Pages.
         -   Under the Source section you will see a dropdown list of branches.
