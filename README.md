@@ -122,11 +122,8 @@ Template for web-publish ready html doc, with webpack install needed only
   deleteBtn.innerHTML = ``<i class="fa-solid fa-trash-can"></i>``    
 ```
 
-
 - To the index.html page of the src folder add the script from the kit
-    Ex:
-
-
+    Ex:         
 
 ```html
 <script src="https://kit.fontawesome.com/08988bcf09.js" crossorigin="anonymous"></script>
