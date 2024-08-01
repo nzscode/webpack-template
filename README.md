@@ -97,7 +97,7 @@ Template for web-publish ready html doc, with webpack install needed only
    
             
 
-        -In terminal:
+        \-In terminal:
 ```bash
             npm run gh-deploy
             npm run gh-deploy-init
@@ -106,25 +106,26 @@ Template for web-publish ready html doc, with webpack install needed only
 
 
 4.  In your repository in GitHub. Go to Settings. Go to Pages.
-    -   Under the Source section you will see a dropdown list of branches.
-    -   Select the "gh-pages" branch and select the root as your folder.
-    -   Then click Save.
+    \-   Under the Source section you will see a dropdown list of branches.
+    \-   Select the "gh-pages" branch and select the root as your folder.
+    \-   Then click Save.
 
 
 
 ## Adding Font-Awesome Icons to element
 - When creating the element:
-      - add the font-awesome code to the inner code of the element
+      \- add the font-awesome code to the inner code of the element
       Ex:
   
   ```js
   let deleteBtn = document.createElemnt("div");
-  deleteBtn.innerHTML = /`<i class="fa-solid fa-trash-can"></i>/`
+  deleteBtn.innerHTML = \`<i class="fa-solid fa-trash-can"></i>\`
 ```
 
 
-- To the index.html page of the src folder add the script from the kit
+\- To the index.html page of the src folder add the script from the kit
     Ex:
+
 
 
 ```html
