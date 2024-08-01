@@ -114,16 +114,16 @@ Template for web-publish ready html doc, with webpack install needed only
 
 ## Adding Font-Awesome Icons to element
 - When creating the element:
-      \- add the font-awesome code to the inner code of the element
+      - add the font-awesome code to the inner code of the element
       Ex:
   
   ```js
   let deleteBtn = document.createElemnt("div");
-  deleteBtn.innerHTML = \`<i class="fa-solid fa-trash-can"></i>\`
+  deleteBtn.innerHTML = ``<i class="fa-solid fa-trash-can"></i>``    
 ```
 
 
-\- To the index.html page of the src folder add the script from the kit
+- To the index.html page of the src folder add the script from the kit
     Ex:
 
 
