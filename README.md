@@ -81,8 +81,8 @@ Template for web-publish ready html doc, with webpack install needed only
         -   Make it easier to run by creating scripts like these in your
             package.json file:
 
-
-            ```"scripts":
+```
+            "scripts":
                 {
                 "gh-deploy": "git push origin :gh-pages && git subtree push --prefix dist origin gh-pages",
                 "gh-deploy-init": "git push origin && git subtree push --prefix dist origin gh-pages"
