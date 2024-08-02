@@ -152,21 +152,51 @@ sudo n latest
 2. Create a new repo, using the template from webpack-template
 3. Copy over the code into the new repo, into the respective src files
 4. Make sure to:
-   a. git add .
-   b. git commit -m
-   c. git push
-5. Use npx webpack OR npm run build
+   a.
+
+   ```
+   git add .
+   ```
+
+   
+   b.
+
+   ```
+   git commit -m
+   ```
+   
+   c.
+
+   ```
+   git push
+   ```
+
+   
 6. Use:
 
-```
-git subtree push --prefix dist origin gh-pages
-```
+    ```
+    npx webpack
+    ```
+
+   OR
+
+
+   ```
+   npm run build
+   ```
+
+   
+9. Use:
+
+    ```
+    git subtree push --prefix dist origin gh-pages
+    ```
 
 7. Use:
 
-```
-git add dist && git commit -m "Initial dist subtree commit"
-```
+    ```
+    git add dist && git commit -m "Initial dist subtree commit"
+    ```
 
 
 8. Use:
