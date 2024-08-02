@@ -98,7 +98,7 @@ Template for web-publish ready html doc, with webpack install needed only
             
 
         \-In terminal:
-```bash
+```
             npm run gh-deploy
             npm run gh-deploy-init
 ```
@@ -131,7 +131,7 @@ To the index.html page of the src folder add the script from the kit
 ## If at any point you have issues where when
 
 
-    ```bash
+    ```
     npx webpack
     ```
 
@@ -139,9 +139,43 @@ To the index.html page of the src folder add the script from the kit
 you get an error child something, try this:
 
 
-```bash
+```
 sudo npm cache clean -f
 sudo npm install -g n
 sudo n stable
 sudo n latest
 ```
+
+
+## BEST WAY TO MAKE A PROJECT
+1. Make the project in index.html in a sample repo
+2. Create a new repo, using the template from webpack-template
+3. Copy over the code into the new repo, into the respective src files
+4. Make sure to:
+   a. git add .
+   b. git commit -m
+   c. git push
+5. Use npx webpack OR npm run build
+6. Use:
+
+```
+git subtree push --prefix dist origin gh-pages
+```
+
+7. Use:
+
+```
+git add dist && git commit -m "Initial dist subtree commit"
+```
+
+
+8. Use:
+
+   ```
+   npm run gh-deploy-init
+   ```
+
+
+   ```
+   npm run gh-deploy
+   ```  
