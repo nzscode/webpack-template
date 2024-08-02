@@ -210,3 +210,6 @@ sudo n latest
    ```
    npm run gh-deploy
    ```  
+
+9. Go to the Settings of the Repo, on GitHub.
+10. In the Pages Tab, make sure the gh-pages branch is selected in the root folder, and the save button is greyed out. Refresh the page every minute until the clickable link shows up.
