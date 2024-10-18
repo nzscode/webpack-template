@@ -54,22 +54,30 @@ Template for web-publish ready html doc, with webpack install needed only
 11. To setup webpack to manage HTML: npm install --save-dev html-webpack-plugin
 12. In package.json add a comma at the end of "scripts: { "test":... , "build":
     webpack", ...}
-13. In the src folder create a style.css file
-14. Make sure the necessary rules are in webpack.config.js for css
+    It should look like this:
+    
+    "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build":"webpack"
+  },
+
+    
+14. In the src folder create a style.css file
+15. Make sure the necessary rules are in webpack.config.js for css
     1. Install the files needed to run CSS & Styles: npm install --save-dev
        css-loader style-loader
-15. Import the css file into the index.js file using : import "./style.css" at
+16. Import the css file into the index.js file using : import "./style.css" at
     the top of the file
-16. To complete basic Build, npx webpack OR npm run build
-17. for adding images, fonts, json, data. See:
+17. To complete basic Build, npx webpack OR npm run build
+18. for adding images, fonts, json, data. See:
     https://webpack.js.org/guides/asset-management/
 
-18. To test if working, add boilerplate to src> index.html and a console.log
+19. To test if working, add boilerplate to src> index.html and a console.log
     statement to index.js For css testing, add a div componenet nad change its
     color to something using js then save each individual file and run npm run
     build
 
-19. To publish the files through GitHub:
+20. To publish the files through GitHub:
 
     ```
     git add dist && git commit -m "Initial dist subtree commit"
